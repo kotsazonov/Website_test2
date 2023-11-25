@@ -1,0 +1,134 @@
+.container {
+   max-width: 1200px; /* или другая максимальная ширина по вашему усмотрению */
+   margin: 0 auto;
+   padding: 20px;
+}
+
+.row {
+   display: flex;
+   flex-wrap: wrap; /* позволяет элементам переноситься на следующую строку, если пространства недостаточно */
+   margin: -10px; /* отрицательный отступ для компенсации отступов у .col-md-4 */
+}
+
+ion-icon {
+    font-size: 24px; /* Размер значков в пикселях */
+    color: rgb(37, 32, 32); /* Черный цвет значков */
+}
+
+.col-md-4 {
+   flex: 0 0 calc(33.3333% - 20px); /* (100% / 3) - 20px (где 20px - это внутренние отступы) */
+   box-sizing: border-box; /* учитывает padding в общей ширине элемента */
+   padding: 10px;
+}
+
+.product {
+   border: 1px solid #eee;
+   padding: 20px;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image img {
+   max-width: 100%; /* делаем изображение резиновым */
+   height: auto;
+   display: block;
+   margin: 0 auto;
+}
+
+.info {
+   text-align: center;
+   margin-top: 20px;
+}
+
+.add-to-cart {
+   background-color: #6d8992;
+   color: #fff;
+   padding: 5px 10px;
+   border: none;
+   cursor: pointer;
+   display: inline-flex;
+   align-items: center;
+}
+
+.add-to-cart:hover{
+   color: #666;
+    background-color: #669da7;
+}
+
+.add-to-cart:active{
+    color: #bddba9;
+    background-color: #47cc59;
+
+}
+
+
+
+.info > div {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.prce {
+   font-weight: bold;
+   font-size: 18px;
+}
+
+.ion-icon {
+   margin-left: 5px;
+}
+
+
+
+.header {
+    
+    padding: 20px 0; /* Внутренний отступ сверху и снизу */
+    text-align: center; /* Выравнивание по центру */
+}
+
+.container {
+    max-width: 1200px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера по горизонтали */
+}
+
+.logo {
+    max-width: 150px; /* Максимальная ширина логотипа */
+}
+
+.site-title {
+    font-size: 50px; /* Размер шрифта заголовка */
+    font-weight: 100; /* Жирный шрифт */
+    margin: 10px 0; /* Внешний отступ сверху и снизу */
+}
+
+.lead {
+    font-size: 18px; /* Размер шрифта подзаголовка */
+    color: #666; /* Цвет текста подзаголовка */
+}
+
+    a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6c7885; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста кнопки */
+    text-decoration: none; /* Убираем подчеркивание */
+    border: 1px solid  #6c7885; /* Граница кнопки */
+    border-radius: 5px; /* Скругленные углы */
+    margin: 5px; /* Внешний отступ между кнопками */
+}
+
+/* Стиль для наведения курсора на кнопку */
+a.button:hover {
+    background-color: #0056b3; /* Изменение цвета фона при наведении */
+    border: 1px solid #0056b3; /* Изменение цвета границы при наведении */
+}
+
+/* Центрирование кнопок по горизонтали */
+.centered {
+    text-align: center;
+}
+
+
+#name, #phone {
+    display: block;
+    margin-bottom: 10px;
+}

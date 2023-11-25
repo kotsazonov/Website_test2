@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бенто Торты Хабаровск</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="cart">
+        <h2>Корзина</h2>
+        <ul id="cart-items">
+            <!-- Здесь будут отображаться выбранные товары -->
+        </ul>
+        <p id="cart-total">Итого: $0.00</p>
+        <button id="checkout-button">Оформить заказ</button>
+        <div id="checkout-form" style="display: none;">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" placeholder="Введите ваше имя">
+            <br>
+            <label for="phone">Номер телефона:</label>
+            <input type="text" id="phone" placeholder="Введите ваш номер телефона">
+            <br>
+            <button id="submit-order" onclick="submitOrder()">Подтвердить заказ</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            
+
+         <div class="col-md-4">
+            <div class="product" data-product-id="10">
+                <div class="image">
+                    <img src="img/bento/7SaW4ExSPLw.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Свинки</h3>
+                    <div>
+                        <span class="prce">1500p</span>
+                        <button class="add-to-cart" onclick="addToCart(this)"><ion-icon name="cart-outline"></ion-icon></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="product" data-product-id="11">
+                <div class="image">
+                    <img src="img/bento/bento10.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Зайцы</h3>
+                    <div>
+                        <span class="prce">1500p</span>
+                        <button class="add-to-cart" onclick="addToCart(this)"><ion-icon name="cart-outline"></ion-icon></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="product" data-product-id="12">
+                <div class="image">
+                    <img src="img/bento/bento11.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Собачка с цветами</h3>
+                    <div>
+                        <span class="prce">1500p</span>
+                        <button class="add-to-cart" onclick="addToCart(this)"><ion-icon name="cart-outline"></ion-icon></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="product" data-product-id="13">
+                <div class="image">
+                    <img src="img/bento/bento3.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Свой принт</h3>
+                    <div>
+                        <span class="prce">1500p</span>
+                        <button class="add-to-cart" onclick="addToCart(this)"><ion-icon name="cart-outline"></ion-icon></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="product" data-product-id="14">
+                <div class="image">
+                    <img src="img/bento/bento4.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Бенто набор</h3>
+                    <div>
+                        <span class="prce">1500p</span>
+                        <button class="add-to-cart" onclick="addToCart(this)"><ion-icon name="cart-outline"></ion-icon></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       > <div class="col-md-4">
+            <div class="product" data-product-id="15">
+                <div class="image">
+                    <img src="img/bento/bento5.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>С цветами</h3>
+                    <div>
+                        <span class="prce">1500p</span>
+                        <button class="add-to-cart" onclick="addToCart(this)"><ion-icon name="cart-outline"></ion-icon></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="product" data-product-id="16">
+                <div class="image">
+                    <img src="img/bento/bento6.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Wednesday</h3>
+                    <div>
+                        <span class="prce">1500p</span>
+                        <button class="add-to-cart" onclick="addToCart(this)"><ion-icon name="cart-outline"></ion-icon></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="col-md-4">
+            <div class="product" data-product-id="17">
+                <div class="image">
+                    <img src="img/bento/bento7.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Ежик</h3>
+                    <div>
+                        <span class="prce">1500p</span>
+                        <button class="add-to-cart" onclick="addToCart(this)"><ion-icon name="cart-outline"></ion-icon></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="product" data-product-id="18">
+                <div class="image">
+                    <img src="img/bento/bento8.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Супер Star</h3>
+                    <div>
+                        <span class="prce">1500p</span>
+                        <button class="add-to-cart" onclick="addToCart(this)"><ion-icon name="cart-outline"></ion-icon></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="col-md-4">
+            <div class="product" data-product-id="19">
+                <div class="image">
+                    <img src="img/bento/bento9.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Позитивная</h3>
+                    <div>
+                        <span class="prce">1500p</span>
+                        <button class="add-to-cart" onclick="addToCart(this)"><ion-icon name="cart-outline"></ion-icon></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="product" data-product-id="110">
+                <div class="image">
+                    <img src="img/bento/bento_1.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Образец </h3>
+                    <div>
+                        <span class="prce">1500p</span>
+                        <button class="add-to-cart" onclick="addToCart(this)"><ion-icon name="cart-outline"></ion-icon></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="product" data-product-id="111">
+                <div class="image">
+                    <img src="img/bento/bentobetmen.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Бетмен</h3>
+                    <div>
+                        <span class="prce">1500p</span>
+                        <button class="add-to-cart" onclick="addToCart(this)"><ion-icon name="cart-outline"></ion-icon></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="product" data-product-id="112">
+                <div class="image">
+                    <img src="img/bento/bentocat.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Хоба</h3>
+                    <div>
+                        <span class="prce">1500p</span>
+                        <button class="add-to-cart" onclick="addToCart(this)"><ion-icon name="cart-outline"></ion-icon></button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="col-md-4">
+            <div class="product" data-product-id="113">
+                <div class="image">
+                    <img src="img/bento/bentokorgi.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Корги</h3>
+                    <div>
+                        <span class="prce">1500p</span>
+                        <button class="add-to-cart" onclick="addToCart(this)"><ion-icon name="cart-outline"></ion-icon></button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="col-md-4">
+            <div class="product" data-product-id="114">
+                <div class="image">
+                    <img src="img/bento/bentosoccer.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Футболист</h3>
+                    <div>
+                        <span class="prce">1500p</span>
+                        <button class="add-to-cart" onclick="addToCart(this)"><ion-icon name="cart-outline"></ion-icon></button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="col-md-4">
+            <div class="product" data-product-id="115">
+                <div class="image">
+                    <img src="img/bento/cats.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Котята</h3>
+                    <div>
+                        <span class="prce">1500p</span>
+                        <button class="add-to-cart" onclick="addToCart(this)"><ion-icon name="cart-outline"></ion-icon></button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="col-md-4">
+            <div class="product" data-product-id="116">
+                <div class="image">
+                    <img src="img/bento/gomer.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h3>Гомер</h3>
+                    <div>
+                        <span class="prce">1500p</span>
+                        <button class="add-to-cart" onclick="addToCart(this)"><ion-icon name="cart-outline"></ion-icon></button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        
+         
+          
+        </div>
+
+           
+    </div>
+    <script src="java.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>  
+</body>
+</html>
